@@ -23,8 +23,6 @@ export const shell = async (
       `shell: command not found: ${args[0]}. Try 'help' to get started.`,
     );
   } else {
-    console.log('args', args[0], args.slice(1), language)
-
     if (args[0] === 'zh') {
       setLanguage('zh');
     }
