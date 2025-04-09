@@ -45,11 +45,6 @@ export const Input = ({
     if (event.key === 'Enter' || event.code === '13') {
       event.preventDefault();
       setLastCommandIndex(0);
-
-      console.log(command)
-
-
-
       await shell(command, setHistory, clearHistory, setCommand, setPath, path, language, setLanguage);
       containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
     }
